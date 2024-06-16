@@ -75,8 +75,8 @@
 	branch = master
 [submodule "components/sample"]
 	path = components/sample
-	url = https://github.com/nasa-itc/sample.git
-	branch = master
+	url = https://github.com/Bilal-A-G/sample.git
+	branch = main
 [submodule "components/novatel_oem615"]
 	path = components/novatel_oem615
 	url = https://github.com/nasa-itc/novatel_oem615.git

@@ -19,6 +19,12 @@ Vagrant.configure("2") do |config|
         owner: 'jstar', group:'vboxsf', automount:'true', 
         mount_options: ["dmode=0770", "fmode=0770"]
 
+    config.vm.provision "shell" do |s|
+        s.binary = true
+        s.inline = "sudo apt-get update;
+              sudo bash vagrant/bin/build-ubuntu-14.04.1-cmake.sh"
+    end
+
     ### General configuration
     config.vm.provider "virtualbox" do |vbox|
         vbox.name = "nos3_20231101"
